@@ -31,7 +31,7 @@
 #include "mouseLocal.h"
 #include "background.h"
 #include "fade.h"
-#include "sound.h"
+//#include "sound.h"
 
 //*****************************************************************************
 // マクロ定義
@@ -438,7 +438,7 @@ HRESULT Init(HINSTANCE hInstance, HWND hWnd, BOOL bWindow)
 	InitFade();
 
 	//音の初期化
-	InitSound(hWnd);
+	//InitSound(hWnd);
 
 	return S_OK;
 }
@@ -508,7 +508,7 @@ void Uninit(void)
 	UninitFade();
 
 	// 音の終了
-	UninitSound();
+	//UninitSound();
 }
 
 //=============================================================================
